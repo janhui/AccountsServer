@@ -26,6 +26,10 @@ public class Invoice {
         this.createdAt = new Date();
     }
 
+    public Invoice() {
+
+    }
+
     public String getCompanyName() {
         return companyName;
     }

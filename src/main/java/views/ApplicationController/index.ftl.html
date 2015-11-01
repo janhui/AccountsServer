@@ -27,9 +27,10 @@
 </body>
 <script type="text/javascript">
     var app = angular.module('MyApp', [])
-    app.controller('MyController', function ($scope) {
+    app.controller('MyController', function ($scope, $http) {
        $scope.clickAction = function () {
-                var x = 0;
+                $http.get("http://localhost:8080/")
+     .success(function(response){$scope.details = response; console.log("test");});
         }
     });
 </script>

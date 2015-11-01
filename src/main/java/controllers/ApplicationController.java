@@ -16,6 +16,7 @@
 
 package controllers;
 
+import models.Invoice;
 import ninja.Result;
 import ninja.Results;
 
@@ -26,23 +27,22 @@ import com.google.inject.Singleton;
 public class ApplicationController {
 
     public Result index() {
+        Person person = new Person();
+        person.name = "jose";
+
+        Result person1 = Results.ok().contentType("application/json").render("person", person);
 
         return Results.html();
 
     }
     
-    public Result helloWorldJson() {
-        
-        SimplePojo simplePojo = new SimplePojo();
-        simplePojo.content = "Hello World! Hello Json!";
 
-        return Results.json().render(simplePojo);
-
-    }
-    
     public static class SimplePojo {
 
         public String content;
         
+    }
+    class Person {
+        String name;
     }
 }

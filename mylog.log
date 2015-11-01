@@ -1,33 +1,31 @@
-01:15:32.609 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1072ms
-01:15:32.755 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.2.10.v20150310
-01:15:32.797 [main] INFO  ninja.servlet.NinjaBootstrap - Successfully configured Logback.
-01:15:33.614 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
-01:15:33.614 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
-01:15:33.666 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
-01:15:33.667 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
-01:15:33.667 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
-01:15:33.668 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
-01:15:33.668 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
-01:15:33.668 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
-01:15:33.669 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
-01:15:33.669 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
-01:15:33.676 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
-01:15:33.676 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
-01:15:33.677 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
-01:15:33.677 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
-01:15:33.678 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
-01:15:33.678 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
-01:15:33.681 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
-01:15:33.893 [main] INFO  ninja.RouterImpl - ------------------------------------------------------------------------------------------
-01:15:33.894 [main] INFO  ninja.RouterImpl - Registered routes
-01:15:33.894 [main] INFO  ninja.RouterImpl - ------------------------------------------------------------------------------------------
-01:15:33.894 [main] INFO  ninja.RouterImpl - GET /                               =>  controllers.ApplicationController.index()
-01:15:33.895 [main] INFO  ninja.RouterImpl - GET /hello_world.json               =>  controllers.ApplicationController.helloWorldJson()
-01:15:33.895 [main] INFO  ninja.RouterImpl - GET /assets/webjars/{fileName: .*}  =>  ninja.AssetsController.serveWebJars()
-01:15:33.895 [main] INFO  ninja.RouterImpl - GET /assets/{fileName: .*}          =>  ninja.AssetsController.serveStatic()
-01:15:33.896 [main] INFO  ninja.RouterImpl - GET /.*                             =>  controllers.ApplicationController.index()
-01:15:33.896 [main] INFO  ninja.servlet.NinjaBootstrap - Ninja injector started in 1099 ms.
-01:15:33.897 [main] INFO  ninja.NinjaDefault - 
+17:55:21.173 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode dev
+17:55:21.268 [main] INFO  ninja.servlet.NinjaBootstrap - Successfully configured Logback.
+17:55:21.990 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+17:55:21.990 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+17:55:22.045 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:55:22.045 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+17:55:22.045 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:55:22.045 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+17:55:22.045 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+17:55:22.045 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+17:55:22.045 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+17:55:22.045 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+17:55:22.051 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
+17:55:22.051 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+17:55:22.051 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
+17:55:22.051 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+17:55:22.051 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+17:55:22.052 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+17:55:22.053 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
+17:55:22.170 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------------
+17:55:22.170 [main] INFO  ninja.RouterImpl - Registered routes
+17:55:22.170 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------------
+17:55:22.170 [main] INFO  ninja.RouterImpl - GET /                               =>  controllers.ApplicationController.index()
+17:55:22.170 [main] INFO  ninja.RouterImpl - GET /assets/webjars/{fileName: .*}  =>  ninja.AssetsController.serveWebJars()
+17:55:22.170 [main] INFO  ninja.RouterImpl - GET /assets/{fileName: .*}          =>  ninja.AssetsController.serveStatic()
+17:55:22.170 [main] INFO  ninja.RouterImpl - GET /.*                             =>  controllers.ApplicationController.index()
+17:55:22.170 [main] INFO  ninja.servlet.NinjaBootstrap - Ninja injector started in 902 ms.
+17:55:22.170 [main] INFO  ninja.NinjaDefault - 
  _______  .___ _______        ____.  _____   
  \      \ |   |\      \      |    | /  _  \  
  /   |   \|   |/   |   \     |    |/  /_\  \ 
@@ -35,44 +33,57 @@
 \____|__  /___\____|__  /\________\____|__  /  @ninjaframework
      web\/framework   \/                  \/   5.2.1
 
-01:15:33.897 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
-01:15:33.902 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 5ms
-01:15:33.905 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@efde75f{/,null,AVAILABLE}
-01:15:33.933 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@1eff1288{HTTP/1.1}{0.0.0.0:1024}
-01:15:33.934 [main] INFO  org.eclipse.jetty.server.Server - Started @2401ms
-01:15:34.682 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
-01:15:34.688 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 6ms
-01:15:34.688 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@efde75f{/,null,UNAVAILABLE}
-01:15:34.699 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@1eff1288{HTTP/1.1}{0.0.0.0:1024}
-01:15:34.723 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.2.10.v20150310
-01:15:34.725 [main] INFO  ninja.servlet.NinjaBootstrap - Successfully configured Logback.
-01:15:34.781 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
-01:15:34.781 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
-01:15:34.784 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
-01:15:34.784 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
-01:15:34.784 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
-01:15:34.785 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
-01:15:34.785 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
-01:15:34.785 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
-01:15:34.786 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
-01:15:34.787 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
-01:15:34.791 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
-01:15:34.793 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
-01:15:34.793 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
-01:15:34.793 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
-01:15:34.795 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
-01:15:34.800 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
-01:15:34.801 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
-01:15:34.815 [main] INFO  ninja.RouterImpl - ------------------------------------------------------------------------------------------
-01:15:34.815 [main] INFO  ninja.RouterImpl - Registered routes
-01:15:34.816 [main] INFO  ninja.RouterImpl - ------------------------------------------------------------------------------------------
-01:15:34.816 [main] INFO  ninja.RouterImpl - GET /                               =>  controllers.ApplicationController.index()
-01:15:34.818 [main] INFO  ninja.RouterImpl - GET /hello_world.json               =>  controllers.ApplicationController.helloWorldJson()
-01:15:34.819 [main] INFO  ninja.RouterImpl - GET /assets/webjars/{fileName: .*}  =>  ninja.AssetsController.serveWebJars()
-01:15:34.822 [main] INFO  ninja.RouterImpl - GET /assets/{fileName: .*}          =>  ninja.AssetsController.serveStatic()
-01:15:34.824 [main] INFO  ninja.RouterImpl - GET /.*                             =>  controllers.ApplicationController.index()
-01:15:34.824 [main] INFO  ninja.servlet.NinjaBootstrap - Ninja injector started in 98 ms.
-01:15:34.825 [main] INFO  ninja.NinjaDefault - 
+17:55:22.170 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+17:55:22.213 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:55:22.214 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:55:22.214 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:55:22.409 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: accounts_test
+	...]
+17:55:22.496 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.8.Final}
+17:55:22.500 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+17:55:22.501 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+17:55:22.752 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+17:55:22.790 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+17:55:22.802 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/accounts
+17:55:22.803 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000046: Connection properties: {user=postgres, password=****}
+17:55:22.803 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000006: Autocommit mode: false
+17:55:22.828 [main] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+17:55:22.995 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+17:55:23.117 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@e769095b [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@29e927d7 [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2svcre9c1ifoigjdf2cty|70fde057, idleConnectionTestPeriod -> 300, initialPoolSize -> 0, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 100, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 0, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@5b0ad6e [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 2svcre9c1ifoigjdf2cty|7fe4fe5e, jdbcUrl -> jdbc:postgresql://localhost:5432/accounts, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 2svcre9c1ifoigjdf2cty|c34feaf, numHelperThreads -> 3 ]
+17:55:23.561 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+17:55:23.571 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+17:55:23.704 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17:55:23.763 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 4.3.1.Final
+17:55:24.213 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 2043ms
+17:56:03.162 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode dev
+17:56:03.266 [main] INFO  ninja.servlet.NinjaBootstrap - Successfully configured Logback.
+17:56:04.438 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+17:56:04.438 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+17:56:04.503 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:56:04.504 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+17:56:04.504 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:56:04.504 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+17:56:04.504 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+17:56:04.504 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+17:56:04.504 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+17:56:04.504 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+17:56:04.512 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
+17:56:04.512 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+17:56:04.512 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
+17:56:04.512 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+17:56:04.512 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+17:56:04.512 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+17:56:04.513 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
+17:56:04.636 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------------
+17:56:04.636 [main] INFO  ninja.RouterImpl - Registered routes
+17:56:04.637 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------------
+17:56:04.637 [main] INFO  ninja.RouterImpl - GET /                               =>  controllers.ApplicationController.index()
+17:56:04.637 [main] INFO  ninja.RouterImpl - GET /assets/webjars/{fileName: .*}  =>  ninja.AssetsController.serveWebJars()
+17:56:04.637 [main] INFO  ninja.RouterImpl - GET /assets/{fileName: .*}          =>  ninja.AssetsController.serveStatic()
+17:56:04.637 [main] INFO  ninja.RouterImpl - GET /.*                             =>  controllers.ApplicationController.index()
+17:56:04.637 [main] INFO  ninja.servlet.NinjaBootstrap - Ninja injector started in 1371 ms.
+17:56:04.637 [main] INFO  ninja.NinjaDefault - 
  _______  .___ _______        ____.  _____   
  \      \ |   |\      \      |    | /  _  \  
  /   |   \|   |/   |   \     |    |/  /_\  \ 
@@ -80,47 +91,57 @@
 \____|__  /___\____|__  /\________\____|__  /  @ninjaframework
      web\/framework   \/                  \/   5.2.1
 
-01:15:34.825 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
-01:15:34.826 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 1ms
-01:15:34.826 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3f093abe{/,null,AVAILABLE}
-01:15:34.827 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@61a002b1{HTTP/1.1}{0.0.0.0:1024}
-01:15:34.828 [main] INFO  org.eclipse.jetty.server.Server - Started @3295ms
-01:15:34.952 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
-01:15:34.952 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 0ms
-01:15:34.953 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3f093abe{/,null,UNAVAILABLE}
-01:15:34.960 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@61a002b1{HTTP/1.1}{0.0.0.0:1024}
-01:15:34.994 [main] INFO  o.d.rendermachine.RenderMachineImpl - Did not find resource org/doctester/custom_doctester_stylesheet.css.
-01:15:34.994 [main] INFO  o.d.rendermachine.RenderMachineImpl - Did not find resource org/doctester/custom_doctester_stylesheet.css.
-01:16:04.368 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1492ms
-01:16:04.515 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.2.10.v20150310
-01:16:04.570 [main] INFO  ninja.servlet.NinjaBootstrap - Successfully configured Logback.
-01:16:05.907 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
-01:16:05.908 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
-01:16:05.989 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
-01:16:05.989 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
-01:16:05.989 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
-01:16:05.989 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
-01:16:05.989 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
-01:16:05.990 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
-01:16:05.990 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
-01:16:05.990 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
-01:16:05.996 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
-01:16:05.997 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
-01:16:05.998 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
-01:16:05.999 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
-01:16:05.999 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
-01:16:05.999 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
-01:16:06.000 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
-01:16:06.278 [main] INFO  ninja.RouterImpl - ------------------------------------------------------------------------------------------
-01:16:06.280 [main] INFO  ninja.RouterImpl - Registered routes
-01:16:06.280 [main] INFO  ninja.RouterImpl - ------------------------------------------------------------------------------------------
-01:16:06.281 [main] INFO  ninja.RouterImpl - GET /                               =>  controllers.ApplicationController.index()
-01:16:06.282 [main] INFO  ninja.RouterImpl - GET /hello_world.json               =>  controllers.ApplicationController.helloWorldJson()
-01:16:06.283 [main] INFO  ninja.RouterImpl - GET /assets/webjars/{fileName: .*}  =>  ninja.AssetsController.serveWebJars()
-01:16:06.283 [main] INFO  ninja.RouterImpl - GET /assets/{fileName: .*}          =>  ninja.AssetsController.serveStatic()
-01:16:06.284 [main] INFO  ninja.RouterImpl - GET /.*                             =>  controllers.ApplicationController.index()
-01:16:06.284 [main] INFO  ninja.servlet.NinjaBootstrap - Ninja injector started in 1714 ms.
-01:16:06.285 [main] INFO  ninja.NinjaDefault - 
+17:56:04.637 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+17:56:04.675 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:56:04.676 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:56:04.676 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:56:04.783 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: accounts_test
+	...]
+17:56:04.855 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.8.Final}
+17:56:04.859 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+17:56:04.861 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+17:56:05.083 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+17:56:05.113 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+17:56:05.131 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/accounts
+17:56:05.131 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000046: Connection properties: {user=postgres, password=****}
+17:56:05.132 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000006: Autocommit mode: false
+17:56:05.151 [main] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+17:56:05.269 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+17:56:05.399 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@96f28915 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@17c5e26d [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2svcre9c1ifpf4a1sp2vyf|229e23ce, idleConnectionTestPeriod -> 300, initialPoolSize -> 0, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 100, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 0, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@25af26af [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 2svcre9c1ifpf4a1sp2vyf|5f84bd75, jdbcUrl -> jdbc:postgresql://localhost:5432/accounts, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 2svcre9c1ifpf4a1sp2vyf|4af95a9, numHelperThreads -> 3 ]
+17:56:05.727 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+17:56:05.736 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+17:56:05.851 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17:56:05.901 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 4.3.1.Final
+17:56:06.269 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 1632ms
+18:07:52.630 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode dev
+18:07:53.676 [main] INFO  ninja.servlet.NinjaBootstrap - Successfully configured Logback.
+18:07:55.463 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+18:07:55.463 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+18:07:55.527 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+18:07:55.527 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+18:07:55.527 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+18:07:55.528 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+18:07:55.528 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+18:07:55.528 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+18:07:55.528 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+18:07:55.528 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+18:07:55.536 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
+18:07:55.671 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
+18:07:55.671 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+18:07:55.671 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
+18:07:55.671 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+18:07:55.671 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+18:07:55.671 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+18:07:55.698 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------------
+18:07:55.698 [main] INFO  ninja.RouterImpl - Registered routes
+18:07:55.698 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------------
+18:07:55.698 [main] INFO  ninja.RouterImpl - GET /                               =>  controllers.ApplicationController.index()
+18:07:55.698 [main] INFO  ninja.RouterImpl - GET /assets/webjars/{fileName: .*}  =>  ninja.AssetsController.serveWebJars()
+18:07:55.698 [main] INFO  ninja.RouterImpl - GET /assets/{fileName: .*}          =>  ninja.AssetsController.serveStatic()
+18:07:55.698 [main] INFO  ninja.RouterImpl - GET /.*                             =>  controllers.ApplicationController.index()
+18:07:55.698 [main] INFO  ninja.servlet.NinjaBootstrap - Ninja injector started in 2022 ms.
+18:07:55.699 [main] INFO  ninja.NinjaDefault - 
  _______  .___ _______        ____.  _____   
  \      \ |   |\      \      |    | /  _  \  
  /   |   \|   |/   |   \     |    |/  /_\  \ 
@@ -128,106 +149,26 @@
 \____|__  /___\____|__  /\________\____|__  /  @ninjaframework
      web\/framework   \/                  \/   5.2.1
 
-01:16:06.286 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
-01:16:06.294 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 8ms
-01:16:06.302 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@efde75f{/,null,AVAILABLE}
-01:16:06.338 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@23c4c714{HTTP/1.1}{0.0.0.0:1024}
-01:16:06.340 [main] INFO  org.eclipse.jetty.server.Server - Started @3466ms
-01:16:07.043 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
-01:16:07.049 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 6ms
-01:16:07.049 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@efde75f{/,null,UNAVAILABLE}
-01:16:07.055 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@23c4c714{HTTP/1.1}{0.0.0.0:1024}
-01:16:07.064 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.2.10.v20150310
-01:16:07.066 [main] INFO  ninja.servlet.NinjaBootstrap - Successfully configured Logback.
-01:16:07.125 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
-01:16:07.126 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
-01:16:07.129 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
-01:16:07.129 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
-01:16:07.129 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
-01:16:07.129 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
-01:16:07.129 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
-01:16:07.129 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
-01:16:07.129 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
-01:16:07.130 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
-01:16:07.132 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
-01:16:07.132 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
-01:16:07.132 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
-01:16:07.132 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
-01:16:07.132 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
-01:16:07.132 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
-01:16:07.133 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
-01:16:07.145 [main] INFO  ninja.RouterImpl - ------------------------------------------------------------------------------------------
-01:16:07.146 [main] INFO  ninja.RouterImpl - Registered routes
-01:16:07.146 [main] INFO  ninja.RouterImpl - ------------------------------------------------------------------------------------------
-01:16:07.148 [main] INFO  ninja.RouterImpl - GET /                               =>  controllers.ApplicationController.index()
-01:16:07.148 [main] INFO  ninja.RouterImpl - GET /hello_world.json               =>  controllers.ApplicationController.helloWorldJson()
-01:16:07.149 [main] INFO  ninja.RouterImpl - GET /assets/webjars/{fileName: .*}  =>  ninja.AssetsController.serveWebJars()
-01:16:07.150 [main] INFO  ninja.RouterImpl - GET /assets/{fileName: .*}          =>  ninja.AssetsController.serveStatic()
-01:16:07.151 [main] INFO  ninja.RouterImpl - GET /.*                             =>  controllers.ApplicationController.index()
-01:16:07.151 [main] INFO  ninja.servlet.NinjaBootstrap - Ninja injector started in 85 ms.
-01:16:07.152 [main] INFO  ninja.NinjaDefault - 
- _______  .___ _______        ____.  _____   
- \      \ |   |\      \      |    | /  _  \  
- /   |   \|   |/   |   \     |    |/  /_\  \ 
-/    |    \   /    |    \/\__|    /    |    \  http://www.ninjaframework.org
-\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
-     web\/framework   \/                  \/   5.2.1
-
-01:16:07.155 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
-01:16:07.156 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 1ms
-01:16:07.158 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7df587ef{/,null,AVAILABLE}
-01:16:07.161 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@4c0bea8d{HTTP/1.1}{0.0.0.0:1024}
-01:16:07.161 [main] INFO  org.eclipse.jetty.server.Server - Started @4288ms
-01:16:07.302 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
-01:16:07.303 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 1ms
-01:16:07.303 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7df587ef{/,null,UNAVAILABLE}
-01:16:07.306 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@4c0bea8d{HTTP/1.1}{0.0.0.0:1024}
-01:16:07.344 [main] INFO  o.d.rendermachine.RenderMachineImpl - Did not find resource org/doctester/custom_doctester_stylesheet.css.
-01:16:07.345 [main] INFO  o.d.rendermachine.RenderMachineImpl - Did not find resource org/doctester/custom_doctester_stylesheet.css.
-01:20:14.252 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode dev
-01:20:14.284 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @545ms
-01:20:14.437 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.2.10.v20150310
-01:20:14.506 [main] INFO  ninja.servlet.NinjaBootstrap - Successfully configured Logback.
-01:20:15.198 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
-01:20:15.199 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
-01:20:15.261 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
-01:20:15.261 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
-01:20:15.262 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
-01:20:15.262 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
-01:20:15.262 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
-01:20:15.262 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
-01:20:15.262 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
-01:20:15.262 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
-01:20:15.266 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
-01:20:15.267 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
-01:20:15.267 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
-01:20:15.267 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
-01:20:15.267 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
-01:20:15.267 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
-01:20:15.269 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
-01:20:15.423 [main] INFO  ninja.RouterImpl - ------------------------------------------------------------------------------------------
-01:20:15.424 [main] INFO  ninja.RouterImpl - Registered routes
-01:20:15.424 [main] INFO  ninja.RouterImpl - ------------------------------------------------------------------------------------------
-01:20:15.424 [main] INFO  ninja.RouterImpl - GET /                               =>  controllers.ApplicationController.index()
-01:20:15.424 [main] INFO  ninja.RouterImpl - GET /hello_world.json               =>  controllers.ApplicationController.helloWorldJson()
-01:20:15.424 [main] INFO  ninja.RouterImpl - GET /assets/webjars/{fileName: .*}  =>  ninja.AssetsController.serveWebJars()
-01:20:15.424 [main] INFO  ninja.RouterImpl - GET /assets/{fileName: .*}          =>  ninja.AssetsController.serveStatic()
-01:20:15.424 [main] INFO  ninja.RouterImpl - GET /.*                             =>  controllers.ApplicationController.index()
-01:20:15.424 [main] INFO  ninja.servlet.NinjaBootstrap - Ninja injector started in 918 ms.
-01:20:15.425 [main] INFO  ninja.NinjaDefault - 
- _______  .___ _______        ____.  _____   
- \      \ |   |\      \      |    | /  _  \  
- /   |   \|   |/   |   \     |    |/  /_\  \ 
-/    |    \   /    |    \/\__|    /    |    \  http://www.ninjaframework.org
-\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
-     web\/framework   \/                  \/   5.2.1
-
-01:20:15.425 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
-01:20:15.429 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 4ms
-01:20:15.434 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@16414e40{/,null,AVAILABLE}
-01:20:15.461 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@22d7b4f8{HTTP/1.1}{0.0.0.0:8080}
-01:20:15.462 [main] INFO  org.eclipse.jetty.server.Server - Started @1725ms
-01:23:18.909 [Thread-12] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
-01:23:18.914 [Thread-12] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 5ms
-01:23:18.915 [Thread-12] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@16414e40{/,null,UNAVAILABLE}
-01:23:18.920 [Thread-12] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@22d7b4f8{HTTP/1.1}{0.0.0.0:8080}
+18:07:55.699 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+18:07:55.787 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+18:07:55.787 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+18:07:55.788 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+18:07:56.059 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: accounts_test
+	...]
+18:07:56.348 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.8.Final}
+18:07:56.353 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+18:07:56.355 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+18:07:56.727 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+18:07:57.003 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+18:07:57.026 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/accounts
+18:07:57.026 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000046: Connection properties: {user=postgres, password=****}
+18:07:57.027 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000006: Autocommit mode: false
+18:07:57.057 [main] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+18:07:57.309 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+18:07:57.558 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@74ed1489 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@b3673fd1 [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2svcre9c1ig4ogl1fx77w3|48ec835e, idleConnectionTestPeriod -> 300, initialPoolSize -> 0, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 100, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 0, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@ec71401f [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 2svcre9c1ig4ogl1fx77w3|76ab909a, jdbcUrl -> jdbc:postgresql://localhost:5432/accounts, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 2svcre9c1ig4ogl1fx77w3|3822f963, numHelperThreads -> 3 ]
+18:07:58.065 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+18:07:58.107 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+18:07:58.441 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+18:07:58.515 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 4.3.1.Final
+18:07:59.127 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 3428ms

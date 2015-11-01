@@ -1,5 +1,6 @@
-models/Invoice.class
-conf/Module.class
-conf/Routes.class
-controllers/ApplicationController$SimplePojo.class
 controllers/ApplicationController.class
+conf/Module.class
+controllers/ApplicationController$Person.class
+models/Invoice.class
+controllers/ApplicationController$SimplePojo.class
+conf/Routes.class
